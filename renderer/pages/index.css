@@ -1,87 +1,107 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, sans-serif;
-    user-select: none;
-    background-color: black;
-    color: white;
-    height: 100vh;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  user-select: none;
+  background-color: black;
+  color: white;
+  height: 100vh;
 }
-
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .page {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 .container {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    width: 100%;
-    padding: 10px 20px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px;
 }
 
 .error {
-    color: #f44336;
+  color: #f44336;
 }
 
 .error-label {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 button {
-    height: 37px;
-    background-color: #2196f3;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    margin: 20px 5px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 220px;
-    font-size: 15px;
+  height: 37px;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  margin: 20px 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 220px;
+  font-size: 15px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    transition: all 250ms;
-    margin: 10px 0;
-    padding: 4px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: left;
+  transition: all 250ms;
+  margin: 10px 0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
 }
 
 li:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 li:hover .product-brand {
-    color: darkgray;
+  color: darkgray;
 }
 
 .devices-list {
-    max-width: 400px;
-    margin: auto;
+  max-width: 400px;
+  margin: auto;
 }
 
 .product-model {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 .product-brand {
-    font-size: 14px;
-    color: lightgray;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.device-panel {
+  margin: 20px;
+  flex: 1;
+  display: flex;
+}
+
+.device-panel .col:first-child {
+  flex: 1;
+}
+
+.device-panel .col:last-child {
+  flex: 2;
+}
+
+@media screen and (max-width: 720px) {
+  .device-panel {
+    flex-direction: column;
+  }
 }

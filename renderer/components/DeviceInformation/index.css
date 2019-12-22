@@ -1,0 +1,16 @@
+.device-model {
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin: 0 0 5px 0;
+}
+
+.device-brand {
+  font-weight: 100;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.device-spec {
+  font-size: 14px;
+  font-weight: 200;
+}

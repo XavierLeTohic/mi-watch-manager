@@ -1,0 +1,21 @@
+ul {
+  padding: 0;
+}
+
+.apps-title {
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin: 0 0 5px 0;
+}
+
+.package-list {
+  overflow: scroll;
+  max-height: 70vh;
+}
+
+.drop-zone {
+  margin-top: 10px;
+  border: 1px dashed #2196f3;
+  border-radius: 4px;
+  padding: 10px;
+}
